@@ -1,0 +1,45 @@
+.design-cards{
+	width: 100%;
+	background: transparent;
+	padding: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 7px;
+	font-weight: 400;
+	
+	
+}
+.design-cards img{
+	width: 100%;
+	border: 1px solid #131419;
+}
+.design-info{
+	display: flex;
+	width: 100%;
+	background: rgba(3,3,3,0.2);
+	backdrop-filter: blur(8px);
+	padding: 6px;
+	position: relative;
+	bottom: 80px;
+	color: #fff;
+	
+}
+.design-info img{
+	width: 12%;
+	height: 12%;
+	border-radius: 8px;
+	margin: 5px 0;
+  margin-left: 10px;
+	border: 1px solid #e3edf7;
+	
+}
+.design-info ul{
+	margin-left: 20px;
+	list-style: none;
+	
+}
+.design-info ul li{
+	padding: 2px;
+	
+}
+

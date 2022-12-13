@@ -1,0 +1,22 @@
+.body2{
+	background: #fff;
+	min-height: 100vh;
+}
+.body2-text{
+	position: relative;
+	top: 100px;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	color: #333;
+}
+
+.design-swiper{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 100px;
+}

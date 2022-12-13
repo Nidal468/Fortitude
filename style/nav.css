@@ -1,0 +1,73 @@
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 5px 20px;
+  font-size: 8px;
+  z-index: 5;
+	position: relative;
+	top: 20px;
+}
+nav img{
+	width: 30%;
+	margin: 0px 10px;
+	padding: 4px 6px;
+	position: absolute;
+	left: 5%;
+	border-radius: 18px;
+	background: #ffffff;
+  box-shadow:  3px 3px 5px #c2c2c2,
+             -3px -3px 3px #ffffff;
+}
+nav button{
+	background: #00D100;
+	border-radius: 18px;
+  border: 0;
+	padding: 3px 6px;
+	box-shadow: 3px 3px 5px #c2c2c2,
+             -3px -3px 3px #ffffff;
+}
+nav button a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+.hamburger{
+	margin-left: 10px;
+	padding-top: 15px;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: flex-start;
+	cursor: pointer;
+	
+}
+.hamburger::before{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #333;
+	transform: translateY(-8px);
+	transition: 0.5s;
+}
+.close .hamburger::before{
+	transform: translateY(0) rotate(45deg);
+	
+}
+.close .hamburger::after{
+	transform: translateY(0) rotate(-45deg);
+box-shadow: 0px 0px 0px #333;
+
+} 
+.hamburger::after{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;
+	background: #333;
+	box-shadow: 0px -8px 0px #333;
+	transform: translateY(8px);
+	transition: 0.5s;
+}
