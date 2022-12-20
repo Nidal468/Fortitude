@@ -1,13 +1,6 @@
 .body3{
-	background: linear-gradient(rgb(20,30,50),rgb(30,20,40));
-	min-height: 100vh;
+	background: #e3edf7;
+	min-height: 150vh;
 	
 }
-.member-box{
-	width: 100%;
-	padding: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 10%;
-	
-}
+

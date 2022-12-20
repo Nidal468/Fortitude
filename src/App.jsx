@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
-import {Nav, Designs, Box, MemberCard} from './components/basic.jsx';
-import { Autoplay, Pagination, Navigation, EffectFade, A11y, EffectCoverflow} from "swiper";
+import {Nav, Designs, Box, MemberCard, Menu} from './components/basic.jsx';
+import {Zoom, Autoplay, Pagination, Navigation, EffectFade, A11y, EffectCoverflow} from "swiper";
 
 import './App.css'
 import './App2.css'
@@ -13,7 +13,9 @@ import '../style/nav.css';
 import '../style/designs.css';
 import '../style/box.css';
 import '../style/membercard.css';
+import '../style/menu.css';
 import "swiper/css";
+import "swiper/css/zoom";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
@@ -33,6 +35,7 @@ export function App() {
 export function App1(){
   return (
 		<div className="body1">
+			<Menu/>
 		<Nav/>
 		<div className="home">
 			<ul>
@@ -89,16 +92,21 @@ export function App1(){
 export function App2() {
   return (
 		<div className="body2">
+		<Menu/>
 		<Nav/>
 			<div className="body2-text">
 			<h1>Nothing great is made alone</h1>
 			<p>We take clients ideas, samples, designs and our own ideas, suggestions to your product.We also discuss with our Frontend Developers so it doesn't cause any problems in the time of development</p>
 			</div>
 		<Swiper
-        spaceBetween={5}
+			style={{
+          "--swiper-navigation-color": "#333",
+          "--swiper-pagination-color": "#333",
+        }}
+        spaceBetween={10}
         centeredSlides={true}
 			  effect={"coverflow"}
-			  slidesPerView={"auto"}
+			  slidesPerView={"1"}
         grabCursor={true}
 			  loop={true}
         autoplay={{
@@ -106,7 +114,7 @@ export function App2() {
           disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true,
+          clickable: false,
         }}
         navigation={false}
         modules={[Autoplay, Navigation, A11y]}
@@ -156,13 +164,13 @@ export function App2() {
 					info="We are extremely efficient in using Figma and it's various tools"
 					/>
 				<Box
-					image="Figma-logo.png"
-					name="Figma"
+					image="adobe-xd.png"
+					name="Adobe XD"
 					info="We are extremely efficient in using Figma and it's various tools"
 					/>
 				<Box
-					image="Figma-logo.png"
-					name="Figma"
+					image="adobe-ilu.png"
+					name="Adobe Illustrator"
 					info="We are extremely efficient in using Figma and it's various tools"
 					/>
 			</div>
@@ -190,69 +198,9 @@ export function App2() {
 export function App3() {
   return (
 		<div className="body3">
-		<Nav/>
-			<div className="member-box">
-			<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-				<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-				<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-				<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-				<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-				<MemberCard
-				userimg="gojo.png"
-				name="Clyde"
-				title="UI/UX Designer"
-				skill_icon_1="Figma-logo.png"
-				skill_icon_2=""
-				skill_icon_3=""
-				skill_icon_4=""
-				contact=""
-				/>
-			</div>
+		<Menu/>
+			<Nav/>
+			<MemberCard/>
 	  </div>
   )
 }
