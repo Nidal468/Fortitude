@@ -1,4 +1,10 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
+
+import { CircularProgressbar, buildStyles} from 'react-circular-progressbar';
+
+import ProgressProvider from "./ProgressProvider";
+
+import 'react-circular-progressbar/dist/styles.css';
 
 export function Nav(){
 	
@@ -54,32 +60,123 @@ export function Box(props){
 		</div>
 	)
 }
-export function MemberCard(props) {
+export function MemberCard(){
+	const [first, setFirst] = useState(0);
+	const [second, setSecond] = useState(0);
+	const [third, setThird] = useState(0);
+	const [fourth, setFourth] = useState(0);
    return(
 		<div className="member-body">
+		<div className="member-nav">
+			<p>Welcome To my Profile!</p>
+			<ul>
+				<li><i class="fi fi-rr-user"></i></li>
+				<li><i class="fi fi-rr-shopping-cart"></i></li>
+				<li><i class="fi fi-rr-cross"></i></li>
+			</ul>
+		</div>
 		<div className="skill-body">
-		<div className="member-nav"></div>
-		<div className="member-skill">
-		<div className="skill-box"></div>
-		<div className="member-info"></div>
+		<div className="member-info">
+			<div>
+				<div>
+					<img src="fate-logo.png"/>
+					<ul>
+					<li>Fate</li>
+					<li>Frontend Developer</li>
+					</ul>
+				</div>
+				<i class="fi fi-rr-menu-dots"></i>
+			</div>
+		</div>
+		<div className="skill-box">
+			<div><p>Member skill level</p><i class="fi fi-rr-menu-dots"></i></div>
+			<div className="skill-bar">
+				<ul>
+					<li onClick={() => setFirst(50)}><ProgressProvider valueStart={100} valueEnd={first}>
+          {value => <CircularProgressbar value={value} text={`${value}%`} styles={buildStyles({rotation: 0.25, strokeLinecap: 'butt', textSize: '16px', pathTransitionDuration: 0.5, pathColor: `rgba(250, 0, 0, ${first / 100})`,
+    textColor: '#333',
+    trailColor: '#e3edf7',
+    backgroundColor: '#3e98c7',})} />}
+        </ProgressProvider><p>React JS</p></li>
+					<li onClick={() => setSecond(80)}><ProgressProvider valueStart={100} valueEnd={second}>
+          {value => <CircularProgressbar value={value} text={`${value}%`} styles={buildStyles({rotation: 0.25, strokeLinecap: 'butt', textSize: '16px', pathTransitionDuration: 0.5, pathColor: `rgba(0, 250, 0, ${second / 100})`,
+    textColor: '#333',
+    trailColor: '#e3edf7',
+    backgroundColor: '#3e98c7',})} />}
+        </ProgressProvider><p>ES6</p></li>
+					<li onClick={() => setThird(60)}><ProgressProvider valueStart={100} valueEnd={third}>
+          {value => <CircularProgressbar value={value} text={`${value}%`} styles={buildStyles({rotation: 0.25, strokeLinecap: 'butt', textSize: '16px', pathTransitionDuration: 0.5, pathColor: `rgba(0, 0, 250, ${third / 100})`,
+    textColor: '#333',
+    trailColor: '#e3edf7',
+    backgroundColor: '#3e98c7',})} />}
+        </ProgressProvider><p>TailWind</p></li>
+					<li onClick={() => setFourth(85)}><ProgressProvider valueStart={100} valueEnd={fourth}>
+          {value => <CircularProgressbar value={value} text={`${value}%`} styles={buildStyles({rotation: 0.25, strokeLinecap: 'butt', textSize: '16px', pathTransitionDuration: 0.5, pathColor: `rgba(50, 50, 50, ${fourth / 100})`,
+    textColor: '#333',
+    trailColor: '#e3edf7',
+    backgroundColor: '#3e98c7',})} />}
+        </ProgressProvider><p>UI/UX</p></li>
+				</ul>
+			</div>
 		</div>
 		</div>
 		<div className="member-price">
+		<div className="member-list">
+		<div className="member-list-info">
+		<h5>Member List</h5>
+		<i class="fi fi-rr-menu-dots"></i>
+		</div>
+			<div className="member-list-container">
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<div className="member-active"><div></div></div>
+				</div>
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<div className="member-active"><div></div></div>
+				</div>
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<div className="member-active"><div></div></div>
+				</div>
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<div className="member-active"><div></div></div>
+				</div>
+			</div>
+		</div>
 		<div className="member-offer">
 			<h4><i class="fi fi-rr-gift" style={{"margin-right":"5px"}}></i>Available Offer</h4>
 			<div className="offer">
 			<div className="offer-text">
-				<h2>Buy 1 get 1</h2>
+				<p>Buy 1 get 1</p>
 				<p>For up to 3 orders! </p>
-				<div className="price"><h2 style={{"font-weight":"400"}}>Just 80$</h2></div>
+				<div className="price"><p style={{"font-weight":"400"}}>Just 80$</p></div>
 				<div className="offer-info">
-					<h5><i className="fi fi-rr-clock-three" style={{"margin-right":"6px"}}></i>Time Left- 2days</h5>
+					<p><i className="fi fi-rr-clock-three" style={{"margin-right":"6px"}}></i>Time Left- 2days</p>
 				</div>
 			</div>
 			</div>
-			<div className="offer-btn"><h3><i class="fi fi-rr-shopping-cart" style={{"margin-right":"10px"}}></i>Purchase Now</h3></div>
+			<div className="offer-btn">
+				<p><i class="fi fi-rr-shopping-cart" style={{"margin-right":"10px"}}></i>Purchase Now</p>
+			</div>
 		</div>
-		<div className="member-list"></div>
 		</div>
 		</div>
 	 )

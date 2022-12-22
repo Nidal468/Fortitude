@@ -2,9 +2,8 @@ import {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 import {Nav, Designs, Box, MemberCard, Menu} from './components/basic.jsx';
-import {Zoom, Autoplay, Pagination, Navigation, EffectFade, A11y, EffectCoverflow} from "swiper";
+import {Autoplay, A11y} from "swiper";
 
 import './App.css'
 import './App2.css'
@@ -199,7 +198,6 @@ export function App3() {
   return (
 		<div className="body3">
 		<Menu/>
-			<Nav/>
 			<MemberCard/>
 	  </div>
   )

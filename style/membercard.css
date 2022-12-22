@@ -1,23 +1,21 @@
 .member-body{
-	position: relative;
-	top: 60px;
 	width: 100%;
 	height: 500px;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px;
 	
 }
 .skill-body{
-	width: 500px;
+	width: 750px;
 	height: 460px;
+	padding: 20px;
+	margin: 10px 0px;
+	border-radius: 14px;
 	background: #fff;
-	padding: 15px;
 	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
-	border-radius: 12px;
-	margin: 0px 10px;
 	
 }
 .member-nav{
@@ -25,58 +23,130 @@
 	height: 10%;
 	background: #fff;
 	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
-	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0px 10px 20px;
+	font-weight: 400;
+	font-size: 14px;
+	
 }
-.member-skill{
-	width: 100%;
-	height: 90%;
+.member-nav ul{
+	background: #e3edf7;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid #555;
+	padding: 5px;
+	
+}
+.member-nav ul li{
+	margin: 0px 10px;
+	font-size: 20px;
+	
 }
 .skill-box{
 	height: 40%;
 	width: 100%;
-	background: #fff;
-	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
-	border-radius: 8px;
-	margin: 10px 0px;
+	padding: 10px 20px;
+	
+}
+.skill-box div{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 15px;
+	font-weight: 400;
+	
+}
+.skill-bar{
+	padding: 10px 30px;
+	
+}
+.skill-bar ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 5px;
+	
+}
+.skill-bar ul li{
+	margin: 0px 10px;
+	text-align: center;
+	font-size: 12px;	
+	
+}
+.skill-bar ul li p{
+	margin-top: 5px;
 	
 }
 .member-info{
 	height: 55%;
 	width: 100%;
-	background: #fff;
-	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
-	border-radius: 8px;
+	
+	
+}
+.member-info div{
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	padding: 5px 15px;
+	
+}
+.member-info div div{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 5px;
+}
+.member-info div div img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #333;
+	
+}
+.member-info div div ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: left;
+	padding: 5px;
+	font-size: 10px;
+	font-weight: 400;
+	list-style: none;
+	margin-left: 10px;
 	
 }
 .member-price{
-	width: 400px;
+	width: 200px;
 	height: 460px;
-	background: linear-gradient(rgb(160,180,250), rgb(180,170,250));
-	padding: 10px;
-	border-radius: 12px;
-	margin: 10px 0px;
+	font-size: 14px;
 	
 }
 .member-offer{
 	width: 100%;
-	height: 55%;
+	height: 45.5%;
 	padding: 10px;
+	border-radius: 12px;
 	background: #fff;
-	border-radius: 8px;
-	
+	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
 }
 .offer{
 	background: linear-gradient(#438, #339);
 	width: 100%;
 	height: 65%;
 	color: #fff;
-	font-size: 12px;
+	font-size: 10px;
 	padding: 15px;
 	
 }
 .price{
 	margin: 10px 0px;
 	width: 65px;
+	text-align: center;
 	padding: 5px;
 	background: #333;
 	border-radius: 4px;
@@ -99,14 +169,13 @@
 	width: 100%;
 	height: 18%;
 	background: #e3edf7;
-	border-radius: 8px;
+	border-radius: 18px;
 	margin-top: 10px;
 	text-align: center;
 	padding: 5px;
 	color: #222;
 	border-bottom: 1px solid #999;
 	transition: 0.5s;
-	
 }
 .offer-btn:hover{
 	background: #333;
@@ -115,9 +184,72 @@
 }
 .member-list{
 	width: 100%;
-	height: 40%;
+	height: 50%;
+	margin-bottom: 20px;
 	background: #fff;
-	margin: 20px 0px;
-	border-radius: 8px;
+	box-shadow: 3px 3px 5px #c3c3c3, 3px 3px 5px #fff;
+}
+.member-list-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	padding: 10px 20px;
+	
+}
+.member-list-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	overflow-x: scroll;
+	height: 160px;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	
+}
+.member-profile{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #333;
+	margin: 2px 0px;
+	
+}
+.member-profile img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #222;
+	
+}
+.member-profile ul{
+	list-style: none;
+	margin-left: 10px;
+	font-size: 10px;
+	margin-right: 25%;
+	
+}
+.member-active{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #e3edf7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+.member-active div{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #00FF00;
 	
 }
