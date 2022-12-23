@@ -34,10 +34,10 @@ nav button a{
 	font-weight: 600;
 }
 .hamburger{
-	margin-left: 10px;
-	padding-top: 35px;
+	padding-left: 20px;
+	padding-top: 40px;
 	right: 5%;
-	position: fixed;
+	position: absolute;
 	width: 30px;
 	height: 30px;
 	display: flex;

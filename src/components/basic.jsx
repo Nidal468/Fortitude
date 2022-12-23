@@ -69,25 +69,82 @@ export function MemberCard(){
 		<div className="member-body">
 		<div className="member-nav">
 			<p>Welcome To my Profile!</p>
-			<ul>
-				<li><i class="fi fi-rr-user"></i></li>
-				<li><i class="fi fi-rr-shopping-cart"></i></li>
-				<li><i class="fi fi-rr-cross"></i></li>
-			</ul>
 		</div>
 		<div className="skill-body">
 		<div className="member-info">
-			<div>
-				<div>
+		<div className="profile-box">
+				<div className="profile">
 					<img src="fate-logo.png"/>
 					<ul>
-					<li>Fate</li>
-					<li>Frontend Developer</li>
+					<li><h4>Fate</h4></li>
+					<li><p>Frontend Developer</p></li>
 					</ul>
 				</div>
 				<i class="fi fi-rr-menu-dots"></i>
 			</div>
 		</div>
+		<div className="member-box">
+				<div className="box-body">
+					<ul>
+						<li><img src="Fiverr-Logo.png"/></li>
+						<li><h6>Fiverr</h6></li>
+					</ul>
+					<div className="review">
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+					</div>
+				</div>
+				<div className="box-body">
+					<ul>
+						<li><img src="Fiverr-Logo.png"/></li>
+						<li><h6>Fiverr</h6></li>
+					</ul>
+					<div className="review">
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+					</div>
+				</div>
+				<div className="box-body">
+					<ul>
+						<li><img src="Fiverr-Logo.png"/></li>
+						<li><h6>Fiverr</h6></li>
+					</ul>
+					<div className="review">
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+						<ul>
+							<li><h6>4.34</h6></li>
+							<li><p>Review</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		<div className="skill-box">
 			<div><p>Member skill level</p><i class="fi fi-rr-menu-dots"></i></div>
 			<div className="skill-bar">
@@ -133,7 +190,7 @@ export function MemberCard(){
 					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
 						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
 					</ul>
-					<div className="member-active"><div></div></div>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
 				</div>
 				<div className="member-profile">
 				<img src="fate-logo.png"/>
@@ -141,7 +198,7 @@ export function MemberCard(){
 					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
 						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
 					</ul>
-					<div className="member-active"><div></div></div>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
 				</div>
 				<div className="member-profile">
 				<img src="fate-logo.png"/>
@@ -149,7 +206,7 @@ export function MemberCard(){
 					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
 						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
 					</ul>
-					<div className="member-active"><div></div></div>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
 				</div>
 				<div className="member-profile">
 				<img src="fate-logo.png"/>
@@ -157,26 +214,55 @@ export function MemberCard(){
 					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
 						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
 					</ul>
-					<div className="member-active"><div></div></div>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
+				</div>
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
+				</div>
+				<div className="member-profile">
+				<img src="fate-logo.png"/>
+					<ul>
+					<li><h4 style={{"font-weight":"500"}}>Fate</h4></li>
+						<li><h6 style={{"font-weight":"300"}}>React Developer</h6></li>
+					</ul>
+					<a href="#"><i class="fi fi-rr-angle-right"></i></a>
 				</div>
 			</div>
 		</div>
-		<div className="member-offer">
-			<h4><i class="fi fi-rr-gift" style={{"margin-right":"5px"}}></i>Available Offer</h4>
-			<div className="offer">
-			<div className="offer-text">
-				<p>Buy 1 get 1</p>
-				<p>For up to 3 orders! </p>
-				<div className="price"><p style={{"font-weight":"400"}}>Just 80$</p></div>
-				<div className="offer-info">
-					<p><i className="fi fi-rr-clock-three" style={{"margin-right":"6px"}}></i>Time Left- 2days</p>
+			<div className="work">
+				<h5 style={{"margin-bottom":"10px"}}>Contact me in</h5>
+				<div>
+					<ul>
+						<li>
+							<div style={{"background":"transparent"}}>
+								<p>
+									<i class="fa-brands fa-linkedin" style={{color:"#009", "padding-right":"5px"}}></i>LinkedIn</p>
+							</div>
+							<a href="#"><i class="fi fi-rr-angle-right"></i></a>
+						</li>
+						<li>
+							<div style={{"background":"transparent"}}>
+								<p>
+									<i class="fa-brands fa-linkedin" style={{color:"#009", "padding-right":"5px"}}></i>LinkedIn</p>
+							</div>
+							<a href="#"><i class="fi fi-rr-angle-right"></i></a>
+						</li>
+						<li>
+							<div style={{"background":"transparent"}}>
+								<p>
+									<i class="fa-brands fa-linkedin" style={{color:"#009", "padding-right":"5px"}}></i>LinkedIn</p>
+							</div>
+							<a href="#"><i class="fi fi-rr-angle-right"></i></a>
+						</li>
+					</ul>
+					<h5 style={{"padding":"10px 5px", "text-align":"center"}}>Please message me only when your placing an order or want advise on something related to my field of work</h5>
 				</div>
 			</div>
-			</div>
-			<div className="offer-btn">
-				<p><i class="fi fi-rr-shopping-cart" style={{"margin-right":"10px"}}></i>Purchase Now</p>
-			</div>
-		</div>
 		</div>
 		</div>
 	 )

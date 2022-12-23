@@ -6,6 +6,7 @@
 	font-family: 'Poppins', sans-serif;
 	
 }
+a{text-decoration: none; color: #333;}
 .body1{
 	background: #fff;
 	min-height: 200vh;
